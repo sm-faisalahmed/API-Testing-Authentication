@@ -53,3 +53,107 @@ OAuth 2.0 allows third-party applications to access resources without exposing u
 
 ---
 
+# Testing REST API Requests with Postman
+Postman is a powerful tool for testing and interacting with REST APIs. Here’s how you can use it to test common requests:
+
+#### [API Documentation](http://dummy.restapiexample.com/)
+### 1. GET Request
+Used to retrieve data, such as fetching a list of users or specific resource details.
+
+Example Endpoint:
+GET: https://dummy.restapiexample.com/api/v1/employees/1
+
+#### Result Body: 
+```json
+ {
+"status": "success",
+"data": {
+"id": "1",
+"employee_name": "Tiger Nixon",
+"employee_salary": "320800",
+"employee_age": "61",
+"profile_image": ""
+}
+}
+```
+
+#### Steps in Postman:
+
+* Select GET as the request method.
+* Enter the API URL.
+*Add headers if required (e.g., Authorization).
+
+### 2. POST Request
+Used to create new resources.
+
+Example Endpoint:
+POST: /users](https://dummy.restapiexample.com/api/v1/create)
+
+#### Body:
+```json
+{"name":"test","salary":"123","age":"23"}
+```
+#### Result Body:
+```json
+{
+    "status": "success",
+    "data": {
+        "name": "test",
+        "salary": "123",
+        "age": "23",
+        "id": 25
+    }
+}
+```
+
+#### Steps in Postman:
+* Select POST as the request method.
+* Enter the API URL.
+* Add the JSON body in the Body tab.
+* Add headers like Content-Type: application/json.
+* 
+### 3. PUT Request
+Used to update existing resources.
+
+Example Endpoint:
+PUT: https://dummy.restapiexample.com/api/v1/update/21
+
+#### Body: 
+```json
+	{"name":"test","salary":"123","age":"23"}
+```
+#### Result Body:
+```json
+{
+    "status": "success",
+    "data": {
+        "name": "test",
+        "salary": "123",
+        "age": "23",
+        "id": 25
+    }
+}
+```
+#### Steps in Postman:
+
+* Select PUT as the request method.
+* Enter the API URL (replace {id} with the resource ID).
+* Add the JSON body with updated data.
+### 4. DELETE Request
+Used to delete resources.
+
+Example Endpoint:
+
+DELETE: https://dummy.restapiexample.com/api/v1/delete/2
+
+#### Result Body:
+```json
+{
+    "status": "success",
+    "message": "successfully! deleted Records"
+}
+```
+#### Steps in Postman:
+
+* Select DELETE as the request method.
+* Enter the API URL (replace {id} with the resource ID).
