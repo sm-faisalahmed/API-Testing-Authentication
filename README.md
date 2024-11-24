@@ -15,6 +15,8 @@ Basic Authentication sends a username and password in each request, typically en
 * Postman will automatically generate the Authorization header with the value.
 * Send the request.
 #### Example: [Postman API - Basic Auth](https://api.postman.com/collections/27777291-57f9c0cc-33a6-47b8-9bf5-ad2070d0297a?access_key=PMAT-01JDF9R3YR588YHFXHZRJVYRX0)
+#### Example of postman basic auth:
+![Postman basic auth](image%20forder/Basic-Auth.png)
 ### 2. **Token-Based Authentication**
 In Token-Based Authentication, a client authenticates once and receives a token (e.g., JWT). This token is included in subsequent requests for authorization.
 #### Steps to Use Token-Based Authentication in Postman:
@@ -25,6 +27,8 @@ In Token-Based Authentication, a client authenticates once and receives a token 
 * Postman will automatically include the token in the Authorization header.
 * Send the request.
 #### Example: [Postman API - API Key Auth](https://api.postman.com/collections/27777291-ab639b66-318f-4009-9548-32c44b705d75?access_key=PMAT-01JDFB5ACBDK6V1XDQETFGEZD)
+#### Example of Nasa API Key:
+![Postman basic auth](image%20forder/API-key.png)
 ### 3. **OAuth 2.0**
 OAuth 2.0 allows third-party applications to access resources without exposing user credentials. It involves obtaining and using an access token.
 
@@ -44,6 +48,8 @@ OAuth 2.0 allows third-party applications to access resources without exposing u
 * Once retrieved, select the token and click Use Token.
 * Postman will add the Authorization header automatically:
 * Send the request.
+#### Example of Spotify Auth 2.0:
+![Spotify API](image%20forder/Auth2.0.png)
 
 ---
 
